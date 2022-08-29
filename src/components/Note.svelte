@@ -1,16 +1,8 @@
 <script lang="ts">
-    // ---------------------------------------------------------
-    //  Imports
-    // ---------------------------------------------------------
-
     import Fa from "svelte-fa/src/fa.svelte";
     import { faStar } from "@fortawesome/free-solid-svg-icons";
     import { createEventDispatcher } from "svelte";
     import { formatDate } from "@/libs/utils";
-
-    // ---------------------------------------------------------
-    //  Props
-    // ---------------------------------------------------------
 
     export let id: number;
     export let title: string;
@@ -19,17 +11,8 @@
     export let isFavorite: boolean;
     export let tags: string[];
 
-    // ---------------------------------------------------------
-    //  Methods Declarations
-    // ---------------------------------------------------------
-
     const dispatch = createEventDispatcher();
 
-    /**
-     * Trim the content if longer than 100 characters and add ellipsis
-     *
-     * @param {String} content
-     */
     const trimContent = (content: string) => {
         if (content.length > 100) {
             return `${content.substring(0, 100)}...`;
