@@ -10,11 +10,13 @@
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
     "@tsconfig/svelte": "^3.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "svelte": "^3.49.0",
     "svelte-check": "^2.8.0",
+    "svelte-fa": "^3.0.3",
     "svelte-preprocess": "^4.10.7",
     "tslib": "^2.4.0",
     "typescript": "^4.6.4",
@@ -26,6 +28,7 @@
     }
   },
   "dependencies": {
+    "moment": "^2.29.4",
     "sass": "^1.54.5"
   }
 }
