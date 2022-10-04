@@ -1,5 +1,5 @@
 <script lang="ts">
-    import logo from "@/assets/svelte.png";
+    import logo from "@/assets/svelte.svg";
 </script>
 
 <header class="global-header">
